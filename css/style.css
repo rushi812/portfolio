@@ -1184,13 +1184,15 @@ ul.portfolio-image li .desc{
   transform: translateY(100%);
 }
 
+/*
 .facebook{
   background: #969696;
-  /*padding: 20px 0;*/
+  padding: 20px 0;
 }
 .facebook a:after{
   background-color: #527bbb;
 }
+*/
 .twitter{
   background: #ABABAB;
 }
