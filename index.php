@@ -1,3 +1,8 @@
+<?php 
+include('/include/form_1.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -769,15 +774,15 @@
 
               </div>
               <div class="col-md-9 content-right">
-                <form>
+                <form id="form_1" novalidate>
                   <div class="group">
-                    <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>Name</label>
+                    <input required="" id="name" type="text"><span class="highlight"></span><span class="bar"></span><label>Name</label>
                   </div>
                   <div class="group">
-                    <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
+                    <input required="" id="email" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
                   </div>
                   <div class="group">
-                    <textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
+                    <textarea required="" id="message"></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
                   </div>
                   <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
                 </form>
