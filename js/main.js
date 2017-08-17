@@ -196,10 +196,3 @@
   }
 
 })(jQuery);
-
-  function submit()
-  {
-    alert('in submit');
-    send_mail(Name.value,Email.value,Message.value);
-
-  }
