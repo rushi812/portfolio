@@ -23,8 +23,19 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
       
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+    <script type="text/javascript">
+    function send_mail(fromName,fromEmail,messageHtml)
+    {
+      (function()
+      {
+          emailjs.init("user_tlkLD9rYYJzU1M5IgvHGC");
+      })();
+      emailjs.send("rushiraj0812_gmail_com","rushiraj_portfolio",{from_name: fromName, to_name: "Rushiraj Brahmbhatt", message_html:messageHtml,from_email:fromEmail});
+    }
+       
+    </script>
     <!--[if lt IE 9]>
        <script type="text/javascript" src="js/html5shiv.min.js"></script>
     <![endif]-->
@@ -780,7 +791,7 @@
                   <div class="group">
                     <textarea required="" id="message"></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
                   </div>
-                  <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
+                  <input id="sendMessage" name="sendMessage" type="submit" value="Send Message" onclick="send_mail()">
                 </form>
               </div>
             </div>
