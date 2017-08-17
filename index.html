@@ -35,15 +35,13 @@
       {
           emailjs.init("user_tlkLD9rYYJzU1M5IgvHGC");
       })();
-        emailjs.send("rushiraj0812_gmail_com","rushiraj_portfolio",{from_name: fromName, to_name: "Rushiraj Brahmbhatt",message_html:messageHtml,from_email:fromEmail})
+        emailjs.send("rushiraj0812_gmail_com","rushiraj_portfolio",{from_name: fromName, to_name: "Rushiraj",message_html:messageHtml,from_email:fromEmail})
         .then(function(response) 
         {
-            alert('success');
          console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
         }, 
         function(err) 
         {
-        alert('error');
          console.log("FAILED. error=", err);
         });
         
