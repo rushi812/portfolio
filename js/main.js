@@ -200,9 +200,6 @@
   function submit()
   {
     alert('in submit');
-    var Name = document.getElementById("name");
-    var Email = document.getElementById("email");
-    var Message = document.getElementById("message");
     send_mail(Name.value,Email.value,Message.value);
 
   }

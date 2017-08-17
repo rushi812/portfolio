@@ -26,8 +26,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> 
     <script type="text/javascript">
-    function send_mail(fromName,fromEmail,messageHtml)
+    function send_mail()
     {
+        var fromName = document.getElementById("name").value;
+        var fromEmail = document.getElementById("email").value;
+        var messageHtml = document.getElementById("message").value;
       (function()
       {
           emailjs.init("user_tlkLD9rYYJzU1M5IgvHGC");
@@ -35,12 +38,15 @@
         emailjs.send("rushiraj0812_gmail_com","rushiraj_portfolio",{from_name: fromName, to_name: "Rushiraj Brahmbhatt",message_html:messageHtml,from_email:fromEmail})
         .then(function(response) 
         {
+            alert('success');
          console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
         }, 
         function(err) 
         {
+        alert('error');
          console.log("FAILED. error=", err);
         });
+        
     }
        
     </script>
@@ -799,7 +805,7 @@
                   <div class="group">
                     <textarea required="" id="message"></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
                   </div>
-                  <input id="sendMessage" name="sendMessage" type="submit" value="Send Message" onclick="submit()">
+                  <input id="sendMessage" name="sendMessage" type="submit" value="Send Message" onclick="send_mail();">
                 </form>
               </div>
             </div>
