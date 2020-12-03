@@ -683,6 +683,7 @@ ul.portfolio-image li img {
   height: 100%;
   left: 0;
   top: 0;
+  object-fit: cover;
   -webkit-filter: grayscale(100%);
   transition: filter, transform, 0.5s;
 }
@@ -1188,8 +1189,8 @@ ul.portfolio-image li .desc {
   list-style: outside none none;
   float: left;
   overflow: hidden;
-  width: 33.333333%;
-  font-size: 13px;
+  width: 25%;
+  font-size: 1.5rem;
 }
 
 .socials a {
@@ -1236,12 +1237,11 @@ ul.portfolio-image li .desc {
   transform: translateY(100%);
 }
 
-.facebook {
+.github {
   background: #969696;
-  /*padding: 20px 0;*/
 }
-.facebook a:after {
-  background-color: #527bbb;
+.github a:after {
+  background-color: #333333;
 }
 
 .twitter {
