@@ -5,8 +5,7 @@
     <title>Rushiraj Brahmbhatt</title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Bodo - Simple One Page Personal" name="description" />
-    <meta content="BdgPixel" name="author" />
+    <meta content="Rushiraj Brahmbhatt - Frontend Developer" name="author" />
     <!--Fav-->
     <link href="images/R.png" rel="shortcut icon" />
 
@@ -34,45 +33,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/dist/email.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
-    <script type="text/javascript">
-      function send_mail() {
-        var fromName = document.getElementById('name').value
-        var fromEmail = document.getElementById('email').value
-        var messageHtml = document.getElementById('message').value
-        ;(function () {
-          emailjs.init('user_tlkLD9rYYJzU1M5IgvHGC')
-        })()
-        emailjs
-          .send('rushiraj0812_gmail_com', 'rushiraj_portfolio', {
-            from_name: fromName,
-            to_name: 'Rushiraj',
-            message_html: messageHtml,
-            from_email: fromEmail
-          })
-          .then(
-            function (response) {
-              console.log(
-                'SUCCESS. status=%d, text=%s',
-                response.status,
-                response.text
-              )
-            },
-            function (err) {
-              console.log('FAILED. error=', err)
-            }
-          )
-      }
-    </script>
   </head>
   <body>
     <!--HEADER -->
@@ -118,21 +78,6 @@
                 Education</span
               >
             </a>
-            <!-- <div
-              class="LI-profile-badge"
-              data-version="v1"
-              data-size="medium"
-              data-locale="en_US"
-              data-type="vertical"
-              data-theme="dark"
-              data-vanity="rushiraj-brahmbhatt-12656864"
-            >
-              <a
-                class="LI-simple-link"
-                href="https://in.linkedin.com/in/rushiraj-brahmbhatt-12656864?trk=profile-badge"
-                >Rushiraj Brahmbhatt</a
-              >
-            </div> -->
           </div>
         </nav>
         <button class="close-button" id="close-button">Close Menu</button>
@@ -175,8 +120,6 @@
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12 white-col">
             <div class="row">
-              <!--OWL CAROUSEL2-->
-              <!-- <div class="owl-carousel2"> -->
               <div class="col-md-12">
                 <div class="wrap-about">
                   <div class="w-content">
@@ -194,7 +137,7 @@
                       evolve and be a better self.
                     </p>
                     <a href="images/resume.pdf" download="Resume"
-                      ><button type="button" class="btn btn-default">
+                      ><button type="button" class="btn btn-default btn-lg">
                         <i class="fa fa-cloud-download" aria-hidden="true"></i>
                         Download Resume
                       </button></a
@@ -203,61 +146,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <div class="col-md-12 col-sm-12 col-xs-12 white-col">
-                  <div class="row">
-                    <div
-                      class="
-                        col-md-8
-                        col-md-offset-2
-                        col-sm-8
-                        col-sm-offset-2
-                        col-xs-12
-                      "
-                    >
-                      <div class="wrap-about">
-                        <table class="w-content">
-                          <tr>
-                            <td class="title">Name</td>
-                            <td class="break">:</td>
-                            <td>Rushiraj Brahmbhatt</td>
-                          </tr>
-                          <tr>
-                            <td class="title">Email</td>
-                            <td class="break">:</td>
-                            <td>rbrahm812@gmail.com</td>
-                          </tr>
-                          <tr>
-                            <td class="title">Skype</td>
-                            <td class="break">:</td>
-                            <td>rushi812</td>
-                          </tr>
-                          <tr>
-                            <td class="title">LinkedIn</td>
-                            <td class="break">:</td>
-                            <td>
-                              <a
-                                href="https://www.linkedin.com/in/rushiraj-brahmbhatt-12656864/"
-                                >Go to LinkedIn</a
-                              >
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="title">GitHub</td>
-                            <td class="break">:</td>
-                            <td>
-                              <a href="https://github.com/rushi812"
-                                >Go to GitHub</a
-                              >
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-              <!-- </div> -->
-              <!--/.OWL CAROUSEL2 END-->
             </div>
           </div>
         </section>
@@ -276,9 +164,8 @@
                 </h3>
                 <p class="content-detail">
                   Made websites Single Page Applications and Multi Page
-                  Applications, using HTML5, CSS3, JAVASCRIPT, JQUERY and
-                  different JS frameworks like ReactJS. <br /><br />I am a part
-                  time freelancer/Website developer.
+                  Applications, using HTML5, CSS3, JAVASCRIPT and JS frameworks
+                  like React, Redux. <br /><br />I am a part time freelancer.
                 </p>
               </div>
               <div class="col-md-9 content-right">
@@ -333,7 +220,7 @@
         <!--/.WORK END-->
 
         <!--EMPLOYEMENT-->
-        <section class="grey-bg" id="employement">
+        <section class="white-bg" id="employement">
           <div class="container">
             <div class="row">
               <div class="col-md-3">
@@ -344,17 +231,10 @@
                   >
                 </h3>
                 <p class="content-detail">
-                  Around 4+ years of experience in the computer software
-                  industry with a demonstrated history of working as
-                  web/frontend developer to analysis, design, development, and
-                  deployment, of various applications with a primary focus on
-                  technologies like
-                  <strong
-                    >HTML5, CSS3, CSS pre-processors like LESS and SASS,
-                    JavaScript, JS libraries like ReactJS and Redux.</strong
-                  >
-                  I am enthusiastic about learning new technologies to evolve
-                  and be a better self.
+                  Experienced React and Javascript Developer with a demonstrated
+                  history of working in the computer software industry. Skilled
+                  in Javascript, ReactJS, Redux, HTML, CSS, SASS. Enthusiastic
+                  in learning new technologies and languages.
                 </p>
               </div>
               <div class="col-md-9 content-right">
@@ -428,11 +308,9 @@
                         <div class="wrap-card">
                           <div class="card">
                             <h2 class="year">AUG 2016 - DEC 2016</h2>
-                            <p class="job">
-                              Graduate Assistant (New York, USA)
-                            </p>
+                            <p class="job">Graduate Assistant</p>
                             <p class="company">
-                              New York Institute of Technology
+                              New York Institute of Technology (New York, USA)
                             </p>
                             <hr />
                             <div class="text-detail">
@@ -485,7 +363,7 @@
         <!--/.EMPLOYEMENT END-->
 
         <!--SKILLS-->
-        <section class="white-bg" id="skill">
+        <section class="grey-bg" id="skill">
           <div class="container">
             <div class="row">
               <div class="col-md-3">
@@ -565,7 +443,7 @@
         <!--/.SKILLS END-->
 
         <!--EDUCATION-->
-        <section class="grey-bg" id="education">
+        <section class="white-bg" id="education">
           <div class="container">
             <div class="row">
               <div class="col-md-3">

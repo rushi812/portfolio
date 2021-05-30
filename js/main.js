@@ -93,10 +93,10 @@
     //typed js
     $('.typed').typed({
       strings: [
-        'My Name is Rushiraj Brahmbhatt',
-        "I'm a Web Developer",
-        'Simplicity is the key to success',
-        'Coding is fun!'
+        'This is Rushiraj Brahmbhatt',
+        "I'm a Fronend Developer",
+        'Coding is fun!',
+        'I ❤️ Trekking '
       ],
       typeSpeed: 100,
       backDelay: 900,
