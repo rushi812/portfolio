@@ -77,11 +77,13 @@ a:hover {
   text-decoration: none;
   color: #818181;
 }
+
 a:focus {
   outline: none;
   color: #999999;
   text-decoration: none;
 }
+
 iframe {
   border: none;
   width: 100%;
@@ -314,8 +316,6 @@ img {
 }
 /* Close Button */
 .close-button {
-  width: 2em;
-  height: 1.5em;
   position: absolute;
   right: 1em;
   top: 1em;
@@ -353,7 +353,7 @@ img {
   right: 0;
   float: right;
   background: #2f2f2f;
-  /* padding: 2.5em 1.5em 0; */
+  padding: 2.5em 1.5em 0;
   -webkit-transform: translate3d(300px, 0, 0);
   transform: translate3d(300px, 0, 0);
   -webkit-transition: -webkit-transform 0.4s;
@@ -363,7 +363,7 @@ img {
 }
 .menu,
 .menu-list {
-  /* height: 100%; */
+  height: 100%;
   overflow-x: auto;
 }
 .menu-list {
@@ -377,11 +377,23 @@ img {
   transform: translate3d(0, 500px, 0);
   color: #a5a5a5;
   position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
 }
-.menu-list a:hover,
-.menu-list a:active span {
+.menu-list a:visited {
+  color: #a5a5a5;
+}
+
+.menu-list a:visited:hover {
   color: #ffffff;
 }
+
+.menu-list a:hover,
+.menu-list a:active {
+  color: #ffffff;
+}
+
 .menu-list,
 .menu-list a {
   -webkit-transition: -webkit-transform 0s 0.4s;
@@ -409,18 +421,13 @@ img {
   -webkit-transform: translate3d(0, 3000px, 0);
   transform: translate3d(0, 3000px, 0);
 }
-.menu-list a span:nth-last-child(1) {
-  margin-bottom: 100px;
-}
+
 .menu-list a span {
   margin-left: 10px;
-  font-weight: 400;
-  font-size: 12px;
   letter-spacing: 5px;
   text-transform: uppercase;
   z-index: 2;
   position: absolute;
-  margin-bottom: 20px;
   padding: 10px;
 }
 .menu-list a span:before {
@@ -512,23 +519,18 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 .job {
-  font-size: 14px;
   font-weight: 500;
-  line-height: 14px;
-  letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: #cccccc;
+  color: #a5a5a5;
 }
 .company {
-  font-size: 12px;
-  line-height: 14px;
-  border: 1px solid #ececec;
-  color: #cccccc;
+  font-size: 1.5rem;
+  border: 1px solid #a3a3a3;
+  color: #a5a5a5;
   padding: 8px 10px;
   border-radius: 6px;
   display: inline-block;
   margin-top: 5px;
-  font-weight: 400;
 }
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
@@ -985,7 +987,7 @@ ul.portfolio-image li .desc {
   width: 100%;
   position: relative;
   display: block;
-  min-height: 480px;
+  min-height: 660px;
 }
 .wrap-about .w-content {
   position: absolute;
@@ -999,8 +1001,7 @@ ul.portfolio-image li .desc {
 }
 
 .wrap-about .w-content td {
-  font-size: 13px;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 .wrap-about .w-content td.title {
   padding-right: 10px;
@@ -1013,14 +1014,14 @@ ul.portfolio-image li .desc {
   height: 35px;
 }
 .wrap-about .head-about {
-  font-size: 13px;
-  line-height: 25px;
+  line-height: 3rem;
   letter-spacing: 0.5px;
-  font-weight: 300;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 .wrap-about .name {
   margin: 20px 0px 0px 0px;
-  font-size: 14px;
+  font-size: 1.8rem;
 }
 /*---------- g. contact -----------*/
 #contact {
@@ -1194,8 +1195,7 @@ ul.portfolio-image li .desc {
 }
 
 .socials a {
-  padding: 0.3em 0.8em;
-  color: black;
+  color: #333;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -1203,6 +1203,14 @@ ul.portfolio-image li .desc {
   text-decoration: none;
   padding: 25px 0;
   width: 100%;
+  text-align: center;
+}
+
+.socials a:active,
+.socials a:visited,
+.socials a:focus {
+  color: #333;
+  text-decoration: none;
 }
 
 .socials a:before,
@@ -1286,12 +1294,25 @@ ul.portfolio-image li .desc {
 #logoBottom a {
   color: #999999;
   transition: ease 0.8s;
+  text-decoration: none;
 }
+
+#logoBottom a:hover {
+  text-decoration: none;
+}
+
 #copyright {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 10px 5px;
   font-size: 0.9em;
-  border-bottom: 1px solid;
+  color: #d9d9d9;
+}
+
+#copyright::after {
+  content: '';
+  display: block;
+  height: 10px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 /*----------------------------------------- 8) Component --------------------------------------------------*/
@@ -1357,17 +1378,4 @@ ul.portfolio-image li .desc {
 }
 .skillst .count-bar .count span:after {
   border-top: 4px solid #818181;
-}
-
-.LI-profile-badge {
-  margin-top: 4rem;
-}
-
-.LI-badge-container.vertical.dark {
-  width: 100% !important;
-}
-
-.LI-badge-container.vertical.dark .LI-profile-pic {
-  left: 50% !important;
-  transform: translate(-50%, 0);
 }
