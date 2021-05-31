@@ -31,7 +31,7 @@
   /*---- quote -----*/
   .wrap-about {
     padding: 0 0 20px 0;
-    min-height: 400px !important;
+    min-height: 520px !important;
   }
   .wrap-about .w-content {
     left: 0;
@@ -118,6 +118,11 @@
   .skillst {
     margin-top: 50px;
   }
+
+  .socials a {
+    font-size: 1.5rem;
+  }
+
   /*------ footer -----*/
   footer p {
     text-align: center;
@@ -128,6 +133,10 @@
   }
   footer ul.social li {
     padding: 0px 10px 0px 10px;
+  }
+
+  #copyright {
+    font-size: 1.2rem;
   }
 }
 
