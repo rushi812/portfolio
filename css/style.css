@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Glyphter';
-  src: url('../fonts/Glyphter.eot');
-  src: url('../fonts/Glyphter?#iefix') format('embedded-opentype'),
-    url('../fonts/Glyphter.woff') format('woff'),
-    url('../fonts/Glyphter.ttf') format('truetype'),
-    url('../fonts/Glyphter.svg#Glyphter') format('svg');
+  font-family: "Glyphter";
+  src: url("../fonts/Glyphter.eot");
+  src: url("../fonts/Glyphter?#iefix") format("embedded-opentype"),
+    url("../fonts/Glyphter.woff") format("woff"),
+    url("../fonts/Glyphter.ttf") format("truetype"),
+    url("../fonts/Glyphter.svg#Glyphter") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -121,7 +121,7 @@ hr {
   position: relative;
 }
 .title-small span:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -20px;
   height: 3px;
@@ -133,7 +133,7 @@ hr {
   position: relative;
 }
 .title-small-center span:after {
-  content: '';
+  content: "";
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -176,6 +176,10 @@ hr {
 }
 
 .text-detail p {
+  font-size: 1.5rem;
+}
+
+.tech-stack p {
   font-size: 1.5rem;
 }
 
@@ -244,7 +248,7 @@ hr {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  content: '';
+  content: "";
   opacity: 0;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
@@ -305,7 +309,7 @@ hr {
 }
 .close-button::before,
 .close-button::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
   height: 100%;
@@ -407,7 +411,7 @@ hr {
   padding: 10px;
 }
 .menu-list a span:before {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -467,7 +471,7 @@ h3,
 h4,
 h5 {
   letter-spacing: 0.8px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 p {
   letter-spacing: 0.5px;
@@ -491,7 +495,7 @@ p {
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 10px;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Roboto Slab", sans-serif;
 }
 .job {
   font-weight: 500;
@@ -510,7 +514,7 @@ p {
 }
 
 #home {
-  background: url('../images/hero2.jpg');
+  background: url("../images/hero2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -721,7 +725,7 @@ ul.portfolio-image li .desc {
 .wrap-card:after {
   display: inline-block;
   position: absolute;
-  content: ' ';
+  content: " ";
   width: 100%;
   height: 3px;
   background: #818181;
@@ -757,7 +761,7 @@ ul.portfolio-image li .desc {
 .card:after {
   display: inline-block;
   position: absolute;
-  content: ' ';
+  content: " ";
   width: 3px;
   height: 100%;
   background: #818181;
@@ -829,7 +833,7 @@ ul.portfolio-image li .desc {
   margin-top: 60px;
 }
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -871,7 +875,7 @@ ul.portfolio-image li .desc {
 }
 .grid-item .wrap-article .fancy span:before,
 .grid-item .wrap-article .fancy span:after {
-  content: '';
+  content: "";
   margin-top: 1px;
   position: absolute;
   height: 5px;
@@ -897,7 +901,7 @@ ul.portfolio-image li .desc {
   font-weight: 700;
 }
 .grid-item .wrap-article .title:after {
-  content: '';
+  content: "";
   display: block;
   margin: 0 auto;
   bottom: -20px;
@@ -920,7 +924,7 @@ ul.portfolio-image li .desc {
   width: 100%;
 }
 .bg-about {
-  background: url('../images/rushi.jpg');
+  background: url("../images/rushi.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1001,7 +1005,7 @@ ul.portfolio-image li .desc {
   list-style: outside none none;
   float: left;
   overflow: hidden;
-  width: 25%;
+  width: 33%;
   font-size: 1.5rem;
 }
 
@@ -1037,7 +1041,7 @@ ul.portfolio-image li .desc {
   display: block;
   height: 3px;
   width: 100%;
-  content: '';
+  content: "";
 }
 
 .socials a:after {
@@ -1173,7 +1177,7 @@ ul.portfolio-image li .desc {
   left: 50%;
   margin-left: -4px;
   top: 18px;
-  content: '';
+  content: "";
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
 }
