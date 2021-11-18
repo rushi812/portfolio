@@ -114,6 +114,7 @@ hr {
 .white-col {
   background: #ffffff;
   padding: none;
+  overflow: auto;
 }
 
 /*---- span -----*/
