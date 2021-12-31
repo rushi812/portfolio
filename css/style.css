@@ -146,12 +146,10 @@ hr {
 /*----- background ------*/
 .grey-bg {
   background: #e3e3e3;
-  padding: 50px 0;
   display: block;
 }
 .white-bg {
   background: #ffffff;
-  padding: 50px 0;
   display: block;
 }
 /*-------- content --------*/
@@ -170,6 +168,10 @@ hr {
 }
 .pad-bottom {
   padding-bottom: 80px;
+}
+
+.sectionPadding {
+  padding: 50px 0;
 }
 .text-detail {
   /* margin-top: 30px; */
